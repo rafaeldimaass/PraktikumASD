@@ -14,7 +14,7 @@ public class Percobaan3 {
 
         System.out.println("==== PROGRAM MENGHITUNG IP SEMESTER ====");
         for(int i = 0; i < mataKuliah.length; i++) {
-            System.out.print("Masukkan nilai angka untuk MK " + mataKuliah[i] + " ");
+            System.out.print("Masukkan nilai angka untuk MK: " + mataKuliah[i] + " ");
             nilaiAngka[i] = input.nextDouble();
         }
 
@@ -53,6 +53,7 @@ public class Percobaan3 {
             System.out.printf("%-40s\t %-10.2f\t %-10s\t %-10.2f\t", mataKuliah[i], nilaiAngka[i], nilaiHuruf, nilaiSetara);
         }
         ipSemester = ipAwal / jumSKS;
+        System.out.println();
         System.out.println("===========================================================================================================");
         System.out.println("IP: " + ipSemester);
     }
