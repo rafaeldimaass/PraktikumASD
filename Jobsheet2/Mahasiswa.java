@@ -3,6 +3,17 @@ package Jobsheet2;
 public class Mahasiswa {
     String nim, nama, kelas;
     double ipk;
+    
+    Mahasiswa() {
+
+    }
+    
+    Mahasiswa(String nm, String nim, double ipk, String kls) {
+        nama = nm;
+        this.nim = nim;
+        this.ipk = ipk;
+        kelas = kls;
+    }
 
     void tampilkanInformasi() {
         System.out.println("Nama: " + nama);
