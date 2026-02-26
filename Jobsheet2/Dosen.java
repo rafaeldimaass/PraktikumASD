@@ -25,7 +25,7 @@ public class Dosen {
             System.out.println("Status: Aktif");
         } else if (statusAktif == false) {
             System.out.println("Status: Non-Aktif");
-        } 
+        }
         System.out.println("Tahun Bergabung: " + tahunBergabung);
         System.out.println("Keahlian: " + bidangKeahlian);
         System.out.println("----------------------------");

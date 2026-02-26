@@ -23,6 +23,5 @@ public class MataKuliahMain {
         mk2.kurangiJam(8);
         mk2.tampilInformasi();
 
-
     }
 }
