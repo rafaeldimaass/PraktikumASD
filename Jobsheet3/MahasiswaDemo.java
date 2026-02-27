@@ -22,14 +22,11 @@ public class MahasiswaDemo {
             arrayOfMahasiswa[i].ipk = Float.parseFloat(dummy);
 
         }
+        
         for(int i=0; i<3; i++) {
             System.out.println("--------------------------------------");
             System.out.println("Data mahasiswa ke-" + (i+1));
-            System.out.println("NIM: " + arrayOfMahasiswa[i].nim);
-            System.out.println("NAMA: " + arrayOfMahasiswa[i].nama);
-            System.out.println("KELAS: " + arrayOfMahasiswa[i].kelas);
-            System.out.println("IPK: " + arrayOfMahasiswa[i].ipk);
-            System.out.println("--------------------------------------");
+            arrayOfMahasiswa[i].cetakInfo();
         }
         
     }
