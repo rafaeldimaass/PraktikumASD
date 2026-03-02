@@ -39,18 +39,18 @@ public class DosenDemo23 {
 
         }
 
-        System.out.println();
-
-        int i = 1;
-        for (Dosen23 dosen23 : arrayOfDosen) {
-            System.out.println("Data Dosen ke-" + (i));
-            System.out.println("Kode: " + dosen23.kode);
-            System.out.println("Nama: " + dosen23.nama);
-            System.out.println("Jenis Kelamin: " + (dosen23.jenisKelamin ? "Laki-Laki" : "Perempuan"));
-            System.out.println("Usia: " + dosen23.usia);
-            System.out.println("---------------------------");
-            i++;
-        }
+    
+        System.out.println("---------------------------");
+        DataDosen23 dataDosen23 = new DataDosen23();
+        dataDosen23.tampilkanSeluruhData(arrayOfDosen);
+        dataDosen23.hitungGenderDosen(arrayOfDosen);
+        System.out.println("---------------------------");
+        dataDosen23.rataRataUmurGender(arrayOfDosen);
+        System.out.println("---------------------------");
+        dataDosen23.cariDosenTermuda(arrayOfDosen);
+        System.out.println("---------------------------");
+        dataDosen23.cariDosenSenior(arrayOfDosen);
+        System.out.println("---------------------------");
 
     };
 }
