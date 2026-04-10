@@ -15,6 +15,12 @@ public class Mahasiswa23{
         kelas = kls;
         ipk = ip;
     }
+    void tambahData(String nm, String name, String kls, double ip) {
+        nim = nm;
+        nama = name;
+        kelas = kls;
+        ipk = ip;
+    }
 
     void tampilInformasi(){
         System.out.println("Nama: " + nama);

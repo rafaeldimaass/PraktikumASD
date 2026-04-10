@@ -1,17 +1,24 @@
+import java.util.Scanner;
 public class MahasiswaDemo23 {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         MahasiswaBerprestasi23 list = new MahasiswaBerprestasi23();
-        Mahasiswa23 m1 = new Mahasiswa23("123", "Zidan", "2A", 3.2);
-        Mahasiswa23 m2 = new Mahasiswa23("124", "Ayu", "2A", 3.5);
-        Mahasiswa23 m3 = new Mahasiswa23("125", "Sofi", "2A", 3.1);
-        Mahasiswa23 m4 = new Mahasiswa23("126", "Sita", "2A", 3.9);
-        Mahasiswa23 m5 = new Mahasiswa23("127", "Miki", "2A", 3.7);
-
-        list.tambah(m1);
-        list.tambah(m2);
-        list.tambah(m3);
-        list.tambah(m4);
-        list.tambah(m5);
+        String nim, nama, kelas;
+        double ipk;
+        for(int i=1; i<=5; i++) {
+            System.out.println("Masukkan data mahasiswa ke-" + i);
+            System.out.print("NIM: ");
+            nim = input.nextLine();
+            System.out.print("Nama: ");
+            nama = input.nextLine();
+            System.out.print("Kelas: ");
+            kelas = input.nextLine();
+            System.out.print("IPK: ");
+            ipk = Double.parseDouble(input.nextLine());
+            System.out.println("-----------------------------");
+            Mahasiswa23 m = new Mahasiswa23(nim, nama, kelas, ipk);
+            list.tambah(m);
+        }
 
         System.out.println("Data Mahasiswa sebelum di sorting");
         list.tampil();
@@ -20,8 +27,6 @@ public class MahasiswaDemo23 {
         list.bubbleSort();
         list.tampil();
 
-        System.out.println("Data yang sudah terurut meggunakan SELECTION SORT (ASC)");
-        list.selectionSort();
-        list.tampil();
+        
     }
 }
