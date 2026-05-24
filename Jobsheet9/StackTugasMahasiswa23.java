@@ -50,7 +50,16 @@ public class StackTugasMahasiswa23 {
         if (!isEmpty()) {
             return stack[top];
         } else {
-            System.out.println("Stack kosonG! Tidak ada tugas yang dikumpulkan");
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan");
+            return null;
+        }
+    }
+
+    public Mahasiswa23 peekBawah() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            System.out.println("Stack kosong! Belum ada tugas terkumpul");
             return null;
         }
     }
