@@ -52,6 +52,10 @@ public class MahasiswaDemo23 {
                     System.out.println("Mahasiswa yang pertama mengumpulkan: " + bawah.nama);
                 }
                 break;
+            case 6:
+                int jumlah = stack.jumlahTugas();
+                System.out.println("Jumlah tugas yang telah terkumpul: " + jumlah);
+                break;
             default:
                 System.out.println("Pilihan tidak valid");
         }

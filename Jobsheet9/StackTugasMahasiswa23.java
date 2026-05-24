@@ -64,6 +64,10 @@ public class StackTugasMahasiswa23 {
         }
     }
 
+    public int jumlahTugas() {
+        return top + 1;
+    }
+
     public void print() {
         if (!isEmpty()) {
             for (int i = top; i >= 0; i--) {
