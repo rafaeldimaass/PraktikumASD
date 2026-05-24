@@ -10,6 +10,8 @@ public class MahasiswaDemo23 {
         System.out.println("2. Menilai Tugas");
         System.out.println("3. Melihat tugas teratas");
         System.out.println("4. Melihat daftar tugas");
+        System.out.println("5. Mahasiswa Pertama Mengumpulkan");
+        System.out.println("6. Jumlah Tugas Terkumpul");
         System.out.println("Pilih");
         pilih = input.nextInt();
         input.nextLine();
